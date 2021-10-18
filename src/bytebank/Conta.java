@@ -6,7 +6,17 @@ public class Conta {
 	int numero;
 	String titular;
 	
-	void deposita(double valor) {
-		this.saldo = this.saldo + valor;
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
+	
+	public boolean saca(double valor){
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}else {
+			System.out.println("Dinheiro insuficiente !!");
+			return false;
+		}
 	}
 }
