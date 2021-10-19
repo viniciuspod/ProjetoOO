@@ -21,6 +21,10 @@ public class testaMetodo {
 		contaDaMarcela.transfere(300, conta);
 		System.out.println(contaDaMarcela.saldo);
 		System.out.println(conta.saldo);
+		
+		
+		contaDaMarcela.titular = "vinicius dantas";
+		System.out.println(contaDaMarcela.titular);
 			
 		
 	}
